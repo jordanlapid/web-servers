@@ -5,8 +5,6 @@ var http = require("http");
 var PORT = 7000;
 var PORT2 = 7500;
 
-
-
 // Create a generic function to handle requests and responses
 function handleRequest(request, response) {
 	if(request.headers.host === "localhost:7500"){
@@ -27,8 +25,6 @@ server1.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
-
-
 
 // Start second server that is listening on port 7500.
 server2.listen(PORT2, function() {
